@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import logo from "../assets/images/logo.svg";
 import iconMenu from "../../src/assets/images/icon-menu.svg";
+import iconMenuClose from "../../src/assets/images/icon-menu-close.svg";
 import { Menu, Transition } from "@headlessui/react";
 import MenuMobile from "./MenuMobile";
 const links = [
@@ -41,13 +42,15 @@ const Navbar = () => {
       <div className="mx-2 md:hidden" onClick={() => setIsHeadlessOpen(true)}>
         <img src={iconMenu} alt="" />
       </div>
-      <MenuMobile
-        open={isHeadlessOpen}
-        setOpen={setIsHeadlessOpen}
-        title="Item Details"
-      >
+
+      <MenuMobile open={isHeadlessOpen} setOpen={setIsHeadlessOpen}>
         <div className="flex flex-col">
-          <input type="text" className="border-gray-300 rounded-md" />
+          <div
+            className="flex justify-end"
+            onClick={() => setIsHeadlessOpen(false)}
+          >
+            <img src={iconMenuClose} alt="" className="h-8 w-8  " />
+          </div>
           <div
             className="h-full flex flex-col mt-32"
             onClick={() => setIsHeadlessOpen(false)}

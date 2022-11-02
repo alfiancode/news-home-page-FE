@@ -37,25 +37,22 @@ const Navbar = () => {
           <img src={iconMenu} alt="logo " />
         </Menu.Button>
         <Transition
-          //   as={Fragment}
-          enter="transition ease-out duration-100"
-          enterFrom="transform opacity-0 scale-95"
-          enterTo="transform opacity-100 scale-100"
-          leave="transition ease-in duration-75"
-          leaveFrom="transform opacity-100 scale-100"
-          leaveTo="transform opacity-0 scale-95"
+          enter="transform transition ease-in-out duration-500 "
+          enterFrom="translate-x-full"
+          enterTo="translate-x-50"
+          leave="transform transition ease-in-out duration-500 sm:duration-700"
+          leaveFrom="translate-x-0"
+          leaveTo="translate-x-full"
         >
-          <Menu.Items className="absolute top-10 -right-5  w-3/4  h-screen flex flex-col justify-center ">
-            <div className="flex flex-col space-y-7 ">
-              {" "}
-              {links.map((link) => (
-                <Menu.Item>
-                  <p className=" hover:bg-[#f15e50] cursor-pointer py-4 px-4 rounded-md">
-                    {link.name}
-                  </p>
-                </Menu.Item>
-              ))}
-            </div>
+          <Menu.Items className="absolute top-10 right-0  w-3/4  h-screen flex flex-col justify-center  shadow-2xl space-y-7">
+            {links.map((link) => (
+              <Menu.Item>
+                <p className=" hover:bg-[#f15e50] cursor-pointer py-4 px-4 rounded-md font-bold mx-5 ">
+                  {link.name}
+                </p>
+              </Menu.Item>
+            ))}
+            {/* </div> */}
           </Menu.Items>
         </Transition>
       </Menu>

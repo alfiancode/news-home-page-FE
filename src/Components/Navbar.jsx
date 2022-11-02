@@ -22,6 +22,10 @@ const links = [
     name: "Trending",
     link: "#",
   },
+  {
+    name: "Categories",
+    link: "#",
+  },
 ];
 
 const Navbar = () => {
@@ -31,11 +35,12 @@ const Navbar = () => {
     <div className="my-10 mx-5 flex justify-between  items-center ">
       <img src={logo} alt="logo " />
 
-      <div className="md:flex hidden space-x-6 ">
+      <div className="md:flex hidden space-x-12 ">
         <p className=" hover:text-[#f15e50] cursor-pointer">Home</p>
         <p className=" hover:text-[#f15e50] cursor-pointer">New</p>
         <p className=" hover:text-[#f15e50] cursor-pointer">Popular</p>
         <p className=" hover:text-[#f15e50] cursor-pointer">Trending</p>
+        <p className=" hover:text-[#f15e50] cursor-pointer">Categories</p>
       </div>
 
       {/* headless ui sidebar menu */}
@@ -52,12 +57,12 @@ const Navbar = () => {
             <img src={iconMenuClose} alt="" className="h-8 w-8  " />
           </div>
           <div
-            className="h-full flex flex-col mt-32"
+            className="h-full flex flex-col mt-16"
             onClick={() => setIsHeadlessOpen(false)}
           >
             {/* map links  */}
             {links.map((link) => (
-              <p className=" hover:text-[#f15e50] cursor-pointer px-3 py-6 font-bold hover:bg-slate-300">
+              <p className=" hover:text-[#f15e50] cursor-pointer px-3 py-6 hover:bg-slate-300">
                 {link.name}
               </p>
             ))}

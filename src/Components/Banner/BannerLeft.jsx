@@ -23,7 +23,7 @@ const BannerLeft = () => {
             </p>
             {/* button read more */}
             <div className="flex flex-row mt-5">
-              <div className="flex flex-row items-center justify-center bg-[#f15e50] rounded-md w-48 h-14">
+              <div className="flex flex-row items-center justify-center bg-[#f15e50] hover:bg-gray-600 rounded-md w-52 h-14">
                 <p className="text-white font-bold">Read More</p>
               </div>
             </div>

@@ -25,7 +25,7 @@ export default function MenuMobile({ open, setOpen, title, children }) {
           >
             <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
-          <div className="fixed inset-y-0 right-0  max-w-full flex">
+          <div className="fixed inset-y-0 right-0 pl-28 max-w-full flex">
             <Transition.Child
               as={Fragment}
               enter="transform transition ease-in-out duration-500 sm:duration-700"

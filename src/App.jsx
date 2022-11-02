@@ -5,8 +5,6 @@ import Banner from "./Components/Banner/Banner";
 import Layout from "./Components/Layout";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Layout>
       <Banner />

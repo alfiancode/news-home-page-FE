@@ -1,6 +1,7 @@
 import React from "react";
 import imageWebDesktop from "../../assets/images/image-web-3-desktop.jpg";
 import imageWebMobile from "../../assets/images/image-web-3-mobile.jpg";
+import { HiX } from "react-icons/hi";
 
 const BannerLeft = () => {
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import Banner from "./Components/Banner";
+import Banner from "./Components/Banner/Banner";
 
 import Layout from "./Components/Layout";
 

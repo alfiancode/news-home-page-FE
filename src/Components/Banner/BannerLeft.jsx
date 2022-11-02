@@ -1,12 +1,14 @@
 import React from "react";
-import imageWebDesktop from "../assets/images/image-web-3-desktop.jpg";
-import imageWebMobile from "../assets/images/image-web-3-mobile.jpg";
+import imageWebDesktop from "../../assets/images/image-web-3-desktop.jpg";
+import imageWebMobile from "../../assets/images/image-web-3-mobile.jpg";
 
-const Banner = () => {
+const BannerLeft = () => {
   return (
     <div>
-      <div className="flex flex-col mx-5">
-        <img src={imageWebMobile} alt="" />
+      <div className="flex flex-col ">
+        <img src={imageWebMobile} alt="" className="md:hidden" />
+        <img src={imageWebDesktop} alt="" className="hidden md:flex" />
+
         <div className="flex flex-col md:flex-row space-x-3 mt-6 ">
           {" "}
           <div className=" font-black text-6xl  md:basis-1/2 ">
@@ -31,4 +33,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default BannerLeft;

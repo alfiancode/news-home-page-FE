@@ -49,12 +49,12 @@ const Navbar = () => {
         <div className="flex flex-col">
           <input type="text" className="border-gray-300 rounded-md" />
           <div
-            className="h-screen flex flex-col mt-32"
+            className="h-full flex flex-col mt-32"
             onClick={() => setIsHeadlessOpen(false)}
           >
             {/* map links  */}
             {links.map((link) => (
-              <p className=" hover:text-[#f15e50] cursor-pointer px-3 py-6">
+              <p className=" hover:text-[#f15e50] cursor-pointer px-3 py-6 font-bold hover:bg-slate-300">
                 {link.name}
               </p>
             ))}

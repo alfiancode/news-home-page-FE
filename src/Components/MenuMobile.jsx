@@ -61,7 +61,7 @@ export default function MenuMobile({ open, setOpen, title, children }) {
                       {title}
                     </Dialog.Title>
                   </div>
-                  <div className="mt-6 relative flex-1 px-4 sm:px-6">
+                  <div className="mt-6 relative flex-1 px-4 sm:px-6 ">
                     {/* Replace with your content */}
                     {children}
                     {/* /End replace */}

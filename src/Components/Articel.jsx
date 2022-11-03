@@ -24,7 +24,7 @@ const content = [
 ];
 const Articel = () => {
   return (
-    <div className="mt-16 flex flex-col md:flex-row   mx-5 space-y-10 md:space-y-0 md:space-x-10">
+    <div className="mt-16 flex flex-col md:flex-row   mx-5 space-y-10 md:space-y-0 md:space-x-10 mb-20">
       {/* map content */}
       {content.map((item) => {
         return (
